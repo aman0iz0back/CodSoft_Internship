@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 public class StudentGradeCalculator {
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
         StudentGradeCalculator studentGradeCalculator = new StudentGradeCalculator();
@@ -14,7 +14,7 @@ public class StudentGradeCalculator {
         int totalMarks = 0;
         System.out.println("Enter the marks of 5 subjects out of 100");
         for (int i = 0; i < 5; i++) {
-            marks[i] = scanner.nextInt();
+            marks[i] = sc.nextInt();
             totalMarks += marks[i];
         }
         return totalMarks;
